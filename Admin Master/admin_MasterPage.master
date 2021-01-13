@@ -1,0 +1,72 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin_MasterPage.master.cs" Inherits="Admin_Master_admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+		<div class="clearfix">
+			<font color="black" size="25"><b>COLLEGE<font color="white" size="30"> ERP</font></b></font>
+			<ul class="navigation">
+				<li class="active"z>
+					<a href="faculty_reg.aspx">FACULTY REGISTRATION</a>
+				</li>
+				<li>
+					<a href="Attendence monthly.aspx">ATTENDENCE MONTHLY</a>
+				</li>
+				<li>
+					<a href="salarycalculation.aspx">SALARY CALCULATION</a>
+				</li>
+				<li>
+					<a href="studentreg.aspx">STUDENT REGISTRATION</a>
+				</li>
+				<li>
+					<a href="studentdegree.aspx">STUDENT DEGREE</a>
+					
+				</li>
+				<li>
+					<a href="display all.aspx">DISPLAY ALL</a>
+				</li>
+                <li>
+					<a href="searchbyname.aspx">SEARCH BY NAME</a>
+				</li>
+                <li>
+					<a href="totalstrenght.aspx">TOTAL STRENGHT</a>
+				</li>
+                <li>
+					<a href="../Logout.aspx">LOGOUT</a>
+				</li>
+			</ul>
+               <div>
+                
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+				<asp:Label ID="Label1" runat="server" ForeColor="White" Font-Size="X-Large"></asp:Label>
+
+				</div>
+            <div class="logo">
+
+				</div>
+
+			
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+			
+		</div>
+	</div>
+        <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+       
+</body>
+</html>

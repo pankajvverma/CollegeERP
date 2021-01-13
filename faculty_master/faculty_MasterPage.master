@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="faculty_MasterPage.master.cs" Inherits="faculty_master_faculty_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+    <form id="form1" runat="server">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- Top Background Image Wrapper -->
+<div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');"> 
+  <!-- ################################################################################################ -->
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear"> 
+      <!-- ################################################################################################ -->
+      <div id="logo" class="fl_left">
+        <h1><a href="home.aspx"><font size="12">COLLEGE ERP</font><br><font size="5">faculty panel</font></a></h1>
+      </div>
+      <nav id="mainav" class="fl_right">
+        <ul class="clear">
+          <li class="active"><a href="home.aspx">Home page</a></li>
+          <li><a class="drop" href="#">STUDENT</a>
+            <ul>
+              <li><a href="attendence_student.aspx">STUDENT ATTENDENCE</a></li>
+              <li><a href="attendence_search.aspx">DISPLAY ATTENDENCE</a></li>
+            </ul>
+          </li>
+            <li><a class="drop" href="#">GRADUATION(BCA)</a>
+            <ul>
+              <li><a href="marks_upload.aspx">MARKS UPLOAD</a></li>
+              <li><a href="display_marksheet.aspx">DISPLAY MARKSHEET</a></li>
+            </ul>
+          </li>       
+          <li><a href="../Logout.aspx">Logout    </a></li>
+        </ul>
+      </nav>
+      <!-- ################################################################################################ -->
+    </header>
+  </div>
+
+        </div>
+
+
+
+        <script src="../layout/scripts/jquery.min.js"></script>
+<script src="../layout/scripts/jquery.backtotop.js"></script>
+<script src="../layout/scripts/jquery.mobilemenu.js"></script>
+
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+        </asp:ContentPlaceHolder>
+
+    </form>
+
+</body>
+</html>
